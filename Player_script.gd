@@ -11,16 +11,16 @@ var attacking = false
 @onready var sprite = $AnimatedSprite2D
 
 func _process(delta):
-	if Input.is_action_just_pressed("attack") and not attacking:
+	if Input.is_action_just_pressed("punch") and not attacking:
 		attacking = true
-		sprite.play("attack")
+		sprite.play("punch")
 
 	if Input.is_action_just_pressed("punch") and not attacking:
 		attacking = true
 		sprite.play("punch")
 
 func _on_AnimatedSprite2D_frame_changed():
-	if sprite.animation == "attack":
+	if sprite.animation == "punch":
 		match sprite.frame:
 			2:
 				attack_area.monitoring = true  # Enable hitbox on this frame
