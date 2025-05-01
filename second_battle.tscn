@@ -1,36 +1,37 @@
-[gd_scene load_steps=19 format=3 uid="uid://us6hse5sauud"]
+[gd_scene load_steps=20 format=3 uid="uid://btik865hpou6v"]
 
-[ext_resource type="Texture2D" uid="uid://co6we6bb5w26k" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art/2 Punk/Punk_idle.png" id="1_0e48y"]
-[ext_resource type="Texture2D" uid="uid://bf6nyyojiy5l2" path="res://Backgrounds/Scene_3.png" id="1_kdubu"]
-[ext_resource type="Script" uid="uid://b83uhyoab1xn7" path="res://Player_script.gd" id="2_0hol4"]
-[ext_resource type="Script" uid="uid://cpimx34bimigg" path="res://character_body_2d_2.gd" id="4_q6r6c"]
-[ext_resource type="Texture2D" uid="uid://cj43rk87tr6ea" path="res://Player_Characters/Tank Kat PH single.png" id="5_kdubu"]
+[ext_resource type="Script" uid="uid://dxsiwucejd4wl" path="res://second_battle.gd" id="1_hnaf1"]
+[ext_resource type="Texture2D" uid="uid://6v7uqujps6a0" path="res://Backgrounds/second_stage.jpg" id="2_fhcb5"]
+[ext_resource type="Script" uid="uid://b83uhyoab1xn7" path="res://Player_script.gd" id="3_wrn7l"]
+[ext_resource type="Texture2D" uid="uid://co6we6bb5w26k" path="res://craftpix-net-856554-free-3-cyberpunk-characters-pixel-art/2 Punk/Punk_idle.png" id="4_wq4p4"]
+[ext_resource type="Script" uid="uid://cpimx34bimigg" path="res://character_body_2d_2.gd" id="5_ssewl"]
+[ext_resource type="Texture2D" uid="uid://cj43rk87tr6ea" path="res://Player_Characters/Tank Kat PH single.png" id="6_k7ofv"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kdubu"]
-size = Vector2(4184.58, 464.895)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_01sre"]
+size = Vector2(4184.58, 361.418)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_d21ai"]
-size = Vector2(447.65, 2317.68)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1x684"]
+size = Vector2(630.706, 2317.68)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_4d7sh"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_s2aau"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
-atlas = ExtResource("1_0e48y")
+atlas = ExtResource("4_wq4p4")
 region = Rect2(0, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
-atlas = ExtResource("1_0e48y")
+atlas = ExtResource("4_wq4p4")
 region = Rect2(48, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
-atlas = ExtResource("1_0e48y")
+atlas = ExtResource("4_wq4p4")
 region = Rect2(96, 0, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
-atlas = ExtResource("1_0e48y")
+atlas = ExtResource("4_wq4p4")
 region = Rect2(144, 0, 48, 48)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_rj586"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_i0qos"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -50,17 +51,17 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nnrr0"]
 size = Vector2(20, 35)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_x0ka3"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0sbvd"]
 size = Vector2(11.3369, 53.6084)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
-atlas = ExtResource("5_kdubu")
+atlas = ExtResource("6_k7ofv")
 region = Rect2(0, 0, 293, 453)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_ir8iy"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_h8eg3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -71,48 +72,49 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hqns4"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbluu"]
 size = Vector2(30.6135, 47.0402)
 
-[node name="Node2D" type="Node2D"]
+[node name="second_battle" type="Node2D"]
+script = ExtResource("1_hnaf1")
 
 [node name="Sprite2D" type="TextureRect" parent="."]
 offset_right = 4117.0
 offset_bottom = 2300.0
 scale = Vector2(0.282227, 0.282227)
-texture = ExtResource("1_kdubu")
+texture = ExtResource("2_fhcb5")
 
 [node name="Floor" type="StaticBody2D" parent="Sprite2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Floor"]
-position = Vector2(2092.29, 2070.67)
-shape = SubResource("RectangleShape2D_kdubu")
+position = Vector2(2092.29, 2122.41)
+shape = SubResource("RectangleShape2D_01sre")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite2D/Floor"]
-position = Vector2(223.825, 1162.38)
-shape = SubResource("RectangleShape2D_d21ai")
+position = Vector2(283.46, 1162.38)
+shape = SubResource("RectangleShape2D_1x684")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite2D/Floor"]
-position = Vector2(3897.58, 1133.84)
-shape = SubResource("RectangleShape2D_d21ai")
+position = Vector2(3865.69, 1133.84)
+shape = SubResource("RectangleShape2D_1x684")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_4d7sh")
+sprite_frames = SubResource("SpriteFrames_s2aau")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 visible = false
 scale = Vector2(2.27875, 2.27875)
-script = ExtResource("2_0hol4")
+script = ExtResource("3_wrn7l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 position = Vector2(102, 167)
 scale = Vector2(0.960428, 1.00753)
-sprite_frames = SubResource("SpriteFrames_rj586")
+sprite_frames = SubResource("SpriteFrames_i0qos")
 animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(91, 174)
-shape = SubResource("RectangleShape2D_q6r6c")
+shape = SubResource("RectangleShape2D_nnrr0")
 
 [node name="AttackArea" type="Area2D" parent="CharacterBody2D"]
 position = Vector2(91, 174)
@@ -121,20 +123,20 @@ position = Vector2(91, 174)
 position = Vector2(10.8277, -1.97171)
 rotation = -3.14159
 scale = Vector2(1.31301, 0.130821)
-shape = SubResource("RectangleShape2D_x0ka3")
+shape = SubResource("RectangleShape2D_0sbvd")
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
 
 [node name="CharacterBody2D2" type="CharacterBody2D" parent="."]
 position = Vector2(232.432, 380.551)
 scale = Vector2(2.18858, 2.29591)
-script = ExtResource("4_q6r6c")
+script = ExtResource("5_ssewl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D2"]
 position = Vector2(3.00081, 0.195457)
 scale = Vector2(0.104575, 0.104575)
-sprite_frames = SubResource("SpriteFrames_ir8iy")
+sprite_frames = SubResource("SpriteFrames_h8eg3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2"]
 position = Vector2(3.00081, 0.195465)
-shape = SubResource("RectangleShape2D_hqns4")
+shape = SubResource("RectangleShape2D_fbluu")

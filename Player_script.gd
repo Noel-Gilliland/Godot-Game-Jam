@@ -5,6 +5,7 @@ var gravity = 1500
 var jump_force = -575
 var double_jump = 0
 var attacking = false
+var health := 1000
 
 @onready var animation_player = $AnimationPlayer
 @onready var attack_area = $AttackArea
