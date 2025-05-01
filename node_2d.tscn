@@ -86,17 +86,14 @@ texture = ExtResource("1_kdubu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Floor"]
 position = Vector2(2092.29, 2070.67)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_kdubu")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite2D/Floor"]
 position = Vector2(223.825, 1162.38)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_d21ai")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite2D/Floor"]
 position = Vector2(3897.58, 1133.84)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_d21ai")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
