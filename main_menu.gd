@@ -2,7 +2,7 @@ extends Control
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://first_battle.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://MAIN MENU/CHARACTER SCREEN/character_select.tscn") # Replace with function body.
 
 
 func _on_settings_pressed() -> void:
