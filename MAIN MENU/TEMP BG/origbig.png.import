@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://txmsftfivy1p"
-path="res://.godot/imported/origbig.png-f878338e0868056e8285879c475570ce.ctex"
+path="res://.godot/imported/origbig.png-1f429ef06b62a3e27323e00e2032cda2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TEMP BG/origbig.png"
-dest_files=["res://.godot/imported/origbig.png-f878338e0868056e8285879c475570ce.ctex"]
+source_file="res://MAIN MENU/TEMP BG/origbig.png"
+dest_files=["res://.godot/imported/origbig.png-1f429ef06b62a3e27323e00e2032cda2.ctex"]
 
 [params]
 

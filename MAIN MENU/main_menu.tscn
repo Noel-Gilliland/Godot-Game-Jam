@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=3 uid="uid://s3gcp1bb4w2j"]
 
-[ext_resource type="Texture2D" uid="uid://txmsftfivy1p" path="res://TEMP BG/origbig.png" id="1_7vrkn"]
-[ext_resource type="Script" uid="uid://bvsp6yufqiue1" path="res://main_menu.gd" id="1_fu7sn"]
-[ext_resource type="FontFile" uid="uid://durdvp7a5dgu5" path="res://TEMP BG/Augusta.ttf" id="2_fu7sn"]
+[ext_resource type="Script" uid="uid://bvsp6yufqiue1" path="res://MAIN MENU/main_menu.gd" id="1_re83h"]
+[ext_resource type="Texture2D" uid="uid://txmsftfivy1p" path="res://MAIN MENU/TEMP BG/origbig.png" id="2_bu3mo"]
+[ext_resource type="FontFile" uid="uid://durdvp7a5dgu5" path="res://MAIN MENU/TEMP BG/Augusta.ttf" id="3_287fp"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
-texture = ExtResource("1_7vrkn")
+texture = ExtResource("2_bu3mo")
 modulate_color = Color(0.427493, 0.427493, 0.427493, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7vrkn"]
@@ -60,7 +60,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_fu7sn")
+script = ExtResource("1_re83h")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -127,7 +127,7 @@ offset_right = 164.0
 offset_bottom = 169.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.824604, 0.886884, 0.904847, 1)
-theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_fonts/font = ExtResource("3_287fp")
 theme_override_font_sizes/font_size = 103
 text = "Kat Fite"
 

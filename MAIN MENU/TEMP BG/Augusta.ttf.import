@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://durdvp7a5dgu5"
-path="res://.godot/imported/Augusta.ttf-5e3c6878a6cc03877538c49206010fee.fontdata"
+path="res://.godot/imported/Augusta.ttf-95b225f7f3cf137320d10f843709abe2.fontdata"
 
 [deps]
 
-source_file="res://TEMP BG/Augusta.ttf"
-dest_files=["res://.godot/imported/Augusta.ttf-5e3c6878a6cc03877538c49206010fee.fontdata"]
+source_file="res://MAIN MENU/TEMP BG/Augusta.ttf"
+dest_files=["res://.godot/imported/Augusta.ttf-95b225f7f3cf137320d10f843709abe2.fontdata"]
 
 [params]
 
