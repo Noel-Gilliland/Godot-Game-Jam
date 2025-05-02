@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8st5fcmdmen"
-path="res://.godot/imported/first_stage.jpg-1d0cb53af54d2a495410cdb81c91752a.ctex"
+uid="uid://cn38d1e0p8tol"
+path="res://.godot/imported/first_stage.jpg-205c8e224669bbd8bd9477b3610cf8b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TEMP BG/first_stage.jpg"
-dest_files=["res://.godot/imported/first_stage.jpg-1d0cb53af54d2a495410cdb81c91752a.ctex"]
+source_file="res://MAIN MENU/CHARACTER SCREEN/ASSETS/first_stage.jpg"
+dest_files=["res://.godot/imported/first_stage.jpg-205c8e224669bbd8bd9477b3610cf8b6.ctex"]
 
 [params]
 

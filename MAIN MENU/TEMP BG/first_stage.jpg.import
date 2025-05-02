@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8st5fcmdmen"
-path="res://.godot/imported/first_stage.jpg-1d0cb53af54d2a495410cdb81c91752a.ctex"
+path="res://.godot/imported/first_stage.jpg-dd52d9b2c17a6e9a3092afef808ca1de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://TEMP BG/first_stage.jpg"
-dest_files=["res://.godot/imported/first_stage.jpg-1d0cb53af54d2a495410cdb81c91752a.ctex"]
+source_file="res://MAIN MENU/TEMP BG/first_stage.jpg"
+dest_files=["res://.godot/imported/first_stage.jpg-dd52d9b2c17a6e9a3092afef808ca1de.ctex"]
 
 [params]
 

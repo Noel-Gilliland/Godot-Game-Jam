@@ -1,0 +1,83 @@
+[gd_scene load_steps=6 format=3 uid="uid://px8wyq7e48yq"]
+
+[ext_resource type="Script" uid="uid://c58yj7cejqcfe" path="res://MAIN MENU/CHARACTER SCREEN/character_slot.gd" id="1_oixrb"]
+[ext_resource type="Texture2D" uid="uid://cn38d1e0p8tol" path="res://MAIN MENU/CHARACTER SCREEN/ASSETS/first_stage.jpg" id="2_3nhhq"]
+[ext_resource type="Texture2D" uid="uid://dtl4ns34dp1hg" path="res://MAIN MENU/CHARACTER SCREEN/ASSETS/Headless@3x.png" id="3_2q8t4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ba7uo"]
+texture = ExtResource("2_3nhhq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5m60p"]
+texture = ExtResource("3_2q8t4")
+texture_margin_bottom = 27.5699
+region_rect = Rect2(50.2695, 40.0594, 1709.33, 551.397)
+
+[node name="characterSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="characterSlot" type="Panel" parent="."]
+custom_minimum_size = Vector2(225, 450)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 21.0
+offset_top = -225.0
+offset_right = 296.0
+offset_bottom = 225.0
+grow_vertical = 2
+script = ExtResource("1_oixrb")
+
+[node name="TextureButton" type="TextureButton" parent="characterSlot"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -97.5
+offset_top = -189.0
+offset_right = 97.5
+offset_bottom = 189.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch_mode = 5
+
+[node name="select" type="Line2D" parent="characterSlot"]
+visible = false
+points = PackedVector2Array(5, 2, 270, 4, 270, 445, 3, 445)
+closed = true
+width = 5.0
+default_color = Color(1, 0.174173, 0.127215, 1)
+
+[node name="CharacterSelection" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ba7uo")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CharacterSelection"]
+custom_minimum_size = Vector2(700, 500)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -551.0
+offset_top = -260.0
+offset_right = 149.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_5m60p")
+
+[connection signal="pressed" from="characterSlot/TextureButton" to="characterSlot" method="_button_pressed"]
